@@ -3,7 +3,7 @@
 /**
  * print_rev - prints revarsed string followed by a new line
  *
- * @s: pointer to the string to print
+ * @s: pointer to the string to print.
  *
  * Return: void
  */
