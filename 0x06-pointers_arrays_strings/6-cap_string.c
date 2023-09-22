@@ -1,15 +1,40 @@
 #include "main.h"
 
 /**
- * isLower - determines whothor ascii is loworcase
+ * cap_string - capitalizes all words of string
  *
- * @c: character
+ * @str: the string to be capitalized
  *
- * Return : 1 if true, 0 if false
+ * Return: A pointer to changed string
  */
 
-int isLower(char c)
+char *cap_string(char *str)
 {
-	return (c >= 97 && c <= 122);
+	int index = 0;
+
+	while (str[index])
+	{
+	while (!(str[index] >= 'a' && str[index] <= 'z'))
+		index++;
+
+	if (str[index - 1] == ' ' ||
+	str[index - 1] == '\t' ||
+	str[index - 1] == '\n' ||
+	str[index - 1] == ',' ||
+	str[index - 1] == ';' ||
+	str[index - 1] == '.' ||
+	str[index - 1] == '!' ||
+	str[index - 1] == '?' ||
+	str[index - 1] == '"' ||
+	str[index - 1] == '(' ||
+	str[index - 1] == ')' ||
+	str[index - 1] == '{' ||
+	str[index - 1] == '}' ||
+	index == 0)
+		str[index] -= 32;
+
+	index++;
+	}
+	return (str);
 }
 
