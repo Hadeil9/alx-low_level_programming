@@ -1,5 +1,8 @@
 #include "main.h"
 
+int checl_pal(char *s, int i, int len);
+int _strlen_recursion(char *s);
+
 /**
  * is_palindrome - Checks if a string is a palindrome.
  * @s: The string to check.
