@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - prints number with separator
- * @separtor: the string separtor
+ * @separator: the string separtor
  * @n: the number of arguments
  * @...: the integers to print
  *
