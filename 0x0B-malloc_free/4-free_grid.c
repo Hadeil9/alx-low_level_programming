@@ -1,17 +1,17 @@
 #include "main.h"
-#include <stdlib.h>
+
+/**
+ * free_grid - free the grid
+ * @grid: grid of mwmories
+ * @height: int
+ * Return: void
+ */
 
 void free_grid(int **grid, int height)
 {
-	if (grid == NULL) 
-	{
-		return;
-	}
+	int i = 0;
 
-	for (int i = 0; i < height; i++)
-	{
+	for (; i < height; i++)
 		free(grid[i]);
-	}
-
 	free(grid);
 }
